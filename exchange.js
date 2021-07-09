@@ -18,7 +18,7 @@ function exchange(){
     document.getElementById("amountto").value = amountTo;
 }
 
-
+// Hàm này cho phép hiển thị kết quả ở ô bên dưới cùng lúc nhập dữ liệu vào ô bên trên
 function exchange1(){
     let amountFrom = parseFloat(document.getElementById("amountfrom").value);
     // let amountTo = parseFloat(document.getElementById("amountto").value);
@@ -39,7 +39,7 @@ function exchange1(){
     document.getElementById("amountto").value = amountTo;
 }
 
-
+// Hàm này cho phép hiển thị kết quả ở ô bên trên cùng lúc nhập dữ liệu vào ô bên dưới
 function exchange2(){
     // let amountFrom = parseFloat(document.getElementById("amountfrom").value);
     let amountTo = parseFloat(document.getElementById("amountto").value);
@@ -59,4 +59,11 @@ function exchange2(){
     }
     document.getElementById("amountfrom").value = amountFrom;
 }
-
+// Dùng hàm change1() để loại bỏ trường hợp USD -> USD hoặc VND -> VND
+function change1(){
+    if (document.getElementById("curFrom").value == "usd") {
+        document.getElementById("curTo").value = "vnd";
+    }   else {
+        document.getElementById("curTo").value = "usd";
+    }
+}

@@ -19,7 +19,7 @@
                 <input type="number" id="amountfrom" oninput="exchange1()">
             </td>
             <td>
-                <select name="curFrom" id="curFrom">
+                <select name="curFrom" id="curFrom" onchange="change1()">
                     <option value="usd" id="usdfrom">USD</option>
                     <option value="vnd" id="vndfrom">VND</option>
                 </select>
@@ -34,7 +34,7 @@
             <td>
                 <select name="curFrom" id="curTo">
                     <option value="usd" id="usdto">USD</option>
-                    <option value="vnd" id="vndto">VND</option>
+                    <option value="vnd" id="vndto" selected>VND</option>
                 </select>
             </td>
         </tr>
