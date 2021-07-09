@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng đổi tiền</title>
+</head>
+<body>
+
+<h2>Ứng dụng chuyển đổi tiền tệ</h2>
+<!--<form>-->
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th style="width: 50px">Currency</th>
+            <th style="width: 50px">Exchange</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="amountfrom" oninput="exchange1()">
+            </td>
+            <td>
+                <select name="curFrom" id="curFrom">
+                    <option value="usd" id="usdfrom">USD</option>
+                    <option value="vnd" id="vndfrom">VND</option>
+                </select>
+            </td>
+            <td rowspan="2">
+                <button type="button" onclick="exchange()" style="width: 100px;height: 50px"> &#8644 </button>
+            </td>
+        </tr><tr>
+            <td>
+                <input type="number" id="amountto" value="" oninput="exchange2()">
+            </td>
+            <td>
+                <select name="curFrom" id="curTo">
+                    <option value="usd" id="usdto">USD</option>
+                    <option value="vnd" id="vndto">VND</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+<!--</form>-->
+</body>
+<script src="exchange.js"></script>
+</html>
